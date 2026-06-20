@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/careerpilot';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://shubruvvv_db_user:eA8ZwjrnnaPjhIi3@shbham-code.sq00j2w.mongodb.net/careerpilot';
 
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('Successfully connected to MongoDB.'))
